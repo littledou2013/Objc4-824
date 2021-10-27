@@ -156,6 +156,7 @@
 		D362D94327293147005AD66B /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = D362D94227293147005AD66B /* Block_private.h */; };
 		D362D94B27293506005AD66B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D362D94A27293506005AD66B /* main.m */; };
 		D362D95127293545005AD66B /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
+		D362D95427293573005AD66B /* LDPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D362D95327293573005AD66B /* LDPerson.m */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		E934A9F123E996D00088F26F /* objc4.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E934A9EF23E9967D0088F26F /* objc4.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F378CAC725534BC000AC8F83 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = F378CAC625534BAC00AC8F83 /* module.modulemap */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -355,6 +356,8 @@
 		D362D94227293147005AD66B /* Block_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block_private.h; sourceTree = "<group>"; };
 		D362D94827293506005AD66B /* LDTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LDTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D362D94A27293506005AD66B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D362D95227293573005AD66B /* LDPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDPerson.h; sourceTree = "<group>"; };
+		D362D95327293573005AD66B /* LDPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDPerson.m; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
@@ -633,6 +636,8 @@
 			isa = PBXGroup;
 			children = (
 				D362D94A27293506005AD66B /* main.m */,
+				D362D95227293573005AD66B /* LDPerson.h */,
+				D362D95327293573005AD66B /* LDPerson.m */,
 			);
 			path = LDTest;
 			sourceTree = "<group>";
@@ -979,6 +984,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D362D95427293573005AD66B /* LDPerson.m in Sources */,
 				D362D94B27293506005AD66B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
