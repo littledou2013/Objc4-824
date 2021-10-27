@@ -30,9 +30,10 @@ xnu-7195.141.2
 
 objc4-824在苹果源码里下载不到，有网友曾经下载到过，这里使用的objc4-824是从网友的github里copy的。
 
-让objc能编译运行的过程可以看git commit提交。
+让objc能编译运行的过程可以看git commit提交记录信息。
 
 参考文章：
+
 [iOS-objc4-781源码编译配置流程](https://www.jianshu.com/p/4f15c551a0ea)
 
 [iOS底层原理01：objc4-818 源码编译](https://www.jianshu.com/p/341be74714e4) 
