@@ -323,6 +323,7 @@
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D362D934272921B7005AD66B /* reason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reason.h; sourceTree = "<group>"; };
 		D362D93627292495005AD66B /* mach-o */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "mach-o"; sourceTree = "<group>"; };
+		D362D937272925D0005AD66B /* os */ = {isa = PBXFileReference; lastKnownFileType = folder; path = os; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
@@ -565,6 +566,7 @@
 		D362D92E272920E9005AD66B /* LostFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D362D937272925D0005AD66B /* os */,
 				D362D93627292495005AD66B /* mach-o */,
 				D362D92F27292146005AD66B /* sys */,
 			);
