@@ -150,6 +150,7 @@
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		C2EB731D23D8A38A0040672B /* dummy-library-mac-i386.c in Sources */ = {isa = PBXBuildFile; fileRef = C2EB731C23D8A38A0040672B /* dummy-library-mac-i386.c */; };
 		D362D935272921B7005AD66B /* reason.h in Headers */ = {isa = PBXBuildFile; fileRef = D362D934272921B7005AD66B /* reason.h */; };
+		D362D93C27292DA8005AD66B /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D362D93B27292DA8005AD66B /* CrashReporterClient.h */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		E934A9F123E996D00088F26F /* objc4.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E934A9EF23E9967D0088F26F /* objc4.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F378CAC725534BC000AC8F83 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = F378CAC625534BAC00AC8F83 /* module.modulemap */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -326,6 +327,7 @@
 		D362D937272925D0005AD66B /* os */ = {isa = PBXFileReference; lastKnownFileType = folder; path = os; sourceTree = "<group>"; };
 		D362D938272928E3005AD66B /* pthread */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pthread; sourceTree = "<group>"; };
 		D362D93A27292A25005AD66B /* System */ = {isa = PBXFileReference; lastKnownFileType = folder; path = System; sourceTree = "<group>"; };
+		D362D93B27292DA8005AD66B /* CrashReporterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 		D362D92E272920E9005AD66B /* LostFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D362D93B27292DA8005AD66B /* CrashReporterClient.h */,
 				D362D93A27292A25005AD66B /* System */,
 				D362D938272928E3005AD66B /* pthread */,
 				D362D937272925D0005AD66B /* os */,
@@ -626,6 +629,7 @@
 				830F2A980D738DC200392440 /* hashtable.h in Headers */,
 				6EACB842232C97A400CE9176 /* objc-zalloc.h in Headers */,
 				6E1475EA21DFDB1B001357EA /* llvm-AlignOf.h in Headers */,
+				D362D93C27292DA8005AD66B /* CrashReporterClient.h in Headers */,
 				838485BF0D6D687300CEA253 /* hashtable2.h in Headers */,
 				6E1475EC21DFDB1B001357EA /* llvm-DenseMapInfo.h in Headers */,
 				C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */,
