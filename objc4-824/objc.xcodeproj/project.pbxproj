@@ -149,6 +149,7 @@
 		C22F5208230EF38B001BFE14 /* objc-ptrauth.h in Headers */ = {isa = PBXBuildFile; fileRef = C22F5207230EF38B001BFE14 /* objc-ptrauth.h */; };
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		C2EB731D23D8A38A0040672B /* dummy-library-mac-i386.c in Sources */ = {isa = PBXBuildFile; fileRef = C2EB731C23D8A38A0040672B /* dummy-library-mac-i386.c */; };
+		D362D935272921B7005AD66B /* reason.h in Headers */ = {isa = PBXBuildFile; fileRef = D362D934272921B7005AD66B /* reason.h */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		E934A9F123E996D00088F26F /* objc4.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E934A9EF23E9967D0088F26F /* objc4.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F378CAC725534BC000AC8F83 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = F378CAC625534BAC00AC8F83 /* module.modulemap */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -320,6 +321,7 @@
 		C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DenseMapExtras.h; path = runtime/DenseMapExtras.h; sourceTree = "<group>"; };
 		C2EB731C23D8A38A0040672B /* dummy-library-mac-i386.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dummy-library-mac-i386.c"; path = "runtime/dummy-library-mac-i386.c"; sourceTree = "<group>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D362D934272921B7005AD66B /* reason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reason.h; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				D362D92E272920E9005AD66B /* LostFiles */,
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
 				838485C60D6D687700CEA253 /* Public Headers */,
 				838485C70D6D688200CEA253 /* Private Headers */,
@@ -558,6 +561,22 @@
 			name = "Project Headers";
 			sourceTree = "<group>";
 		};
+		D362D92E272920E9005AD66B /* LostFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D362D92F27292146005AD66B /* sys */,
+			);
+			path = LostFiles;
+			sourceTree = "<group>";
+		};
+		D362D92F27292146005AD66B /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				D362D934272921B7005AD66B /* reason.h */,
+			);
+			path = sys;
+			sourceTree = "<group>";
+		};
 		E9AD465824925261002AF1DB /* check-preopt-caches */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,6 +657,7 @@
 				838486130D6D68A200CEA253 /* objc.h in Headers */,
 				83D9269821225A7400299F69 /* arm64-asm.h in Headers */,
 				838486140D6D68A200CEA253 /* Object.h in Headers */,
+				D362D935272921B7005AD66B /* reason.h in Headers */,
 				8384861E0D6D68A800CEA253 /* Protocol.h in Headers */,
 				838486200D6D68A800CEA253 /* runtime.h in Headers */,
 				39ABD72312F0B61800D1054C /* objc-weak.h in Headers */,
@@ -920,6 +940,7 @@
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"\"$(SRCROOT)/LostFiles\"",
 				);
 				"INCLUDED_SOURCE_FILE_NAMES[sdk=macosx*][arch=i386]" = "dummy-library-mac-i386.c";
 				INSTALL_PATH = /usr/lib;
@@ -1007,6 +1028,7 @@
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"\"$(SRCROOT)/LostFiles\"",
 				);
 				"INCLUDED_SOURCE_FILE_NAMES[sdk=macosx*][arch=i386]" = "dummy-library-mac-i386.c";
 				INSTALL_PATH = /usr/lib;
