@@ -12,6 +12,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
 //        NSLog(@"Hello, World!");
         LDPerson *p = [[LDPerson alloc] init];
+        NSLog(@"p = %@", p);
     }
     return 0;
 }
